@@ -12,8 +12,9 @@ body {
     background-color: #121214;
     background-image: url(./assets/bg.svg);
     background-position-x: center;
-    background-position-y: 55.6%;
+    background-position-y: -745px;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body * {
@@ -27,9 +28,15 @@ body * {
 
 header {
     margin-bottom: 3.9375rem;
+    text-align: center;
+}
+
+#cards{
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 2rem;
+    margin: 0 4rem
 }
 
 .card {
@@ -80,6 +87,10 @@ header {
 .card ul li + li {
     border-top: 1px solid #323238;
     padding-top: 1.5rem;
+}
+
+.card ul li img {
+    width: 3.125rem;
 }
 
 .card ul li strong {
